@@ -4,8 +4,12 @@ import Icon from '../Atoms/Icon';
 import Text from '../Atoms/Text';
 
 const EventsButton = () => {
+  const handleClick = () => {
+    window.location.href = '/events';
+  };
+
   return (
-    <Button className="events-button">
+    <Button className="events-button" onClick={handleClick}>
       <Icon iconClass="fa-regular fa-calendar" />
       <Text text="Events" />
     </Button>
